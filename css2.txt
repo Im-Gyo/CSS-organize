@@ -1,0 +1,119 @@
+@font-face {
+	font-family: '돋움체';
+	font-style:normal; 
+	/*weight : 굵기 설정*/
+	font-weight:normal; 
+	src: url('../Fonts/KoPubDotumMedium.ttf');
+}
+
+@font-face {
+	font-family: '바탕체'; 
+	font-style:normal; 
+	font-weight:normal; 
+	src: url('../Fonts/KoPubBatangMedium.ttf');
+}
+
+body { 
+	font-family:'바탕체';
+	font-size:1em; 
+}
+
+h1, h2,h3, h4 {  font-family:'돋움체';	}
+h1 { 
+	font-size:3em; 
+	line-height: 100%;
+}
+h2 { font-size:1.4em; }
+h3 { font-size:1.2em; }
+h4 { font-size:1.1em; }
+p { 
+	font-size:1em; 
+	line-height: 1.45;
+}
+.ongimage { 
+	text-align:center;
+	border:3px solid white;
+	display:block;
+}
+.ong {
+	/*텍스트에 줄을 넣음 아래, 위*/
+	text-decoration:underline overline;
+	text-align:center;
+}
+
+/*strong태그의 emphasis-mark 클래스에 스타일 적용*/
+strong.emphasis-mark {
+	/*text-emphasis-style:텍스트에 강조점 표시 */
+	/*-webkit- : 구글, 사파리 브라우저에 적용*/
+	/*-moz- : 파이어폭스 브라우저에 적용*/
+	/*-ms- : 익스플로러 브라우저에 적용(생략가능)*/
+	/*-o- : 오페라 브라우저에 적용*/
+	/*-epub- : 전자책에 적용*/
+	/*값 관련 : https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis*/
+	-epub-text-emphasis-style:double-circle;
+	-webkit-text-emphasis-style:double-circle;
+	text-emphasis-style:double-circle; 
+}
+
+/*
+p {
+padding-left : 2em; 왼쪽 패딩 값
+text-indent: 1em; 들여쓰기 (음수일경우 내어쓰기)
+letter-spacing : 자간설정
+word-spacing : 단어간격설정
+line-height : 줄간격
+word-break : 줄바꿈 
+(normal : 기본값으로 일반적인 규칙에 따라 줄바꿈)
+(break-all : 문자를 강제로 줄바꿈)
+(keep-all : 문자 쌍 사이에서 줄바꿈이 금지)
+float: 이미지와 텍스트가 어울리게 배치 (right, left)
+clear : float의 영향을 받지 않음 (both 값 : left , right 둘다 무시)
+position: relative;
+(top: 5px; : )
+(z-index: 1; : 우선순위 맨위, 맨아래 등등)
+position: absolute; position: static 속성을 가지고 있지 않은 부모를 기준으로 움직입니다.
+position: fixed; 항상 특정 위치에 고정
+*/
+
+/*
+<table> 테이블을 만드는 태그
+	<th> 테이블 헤더 태그
+	<tr> 테이블 행 태그
+	<td> 테이블 열 태그
+	colspan = 가로합병
+	rowspan = 세로 합병
+border-collapse : 표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 어떻게 처리할 지
+	separate : 표(table)의 테두리와 셀(td)의 테두리 사이에 간격을 둡니다.
+	collapse : 표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 없앱니다. 겹치는 부분은 한 줄로 나타냅니다.
+
+background-repeat : 배경 이미지의 반복 여부와 반복 방향
+	repeat : 가로 방향, 세로 방향으로 반복합니다.
+	repeat-x : 가로 방향으로 반복합니다.
+	repeat-y : 세로 방향으로 반복합니다.
+	no-repeat : 반복하지 않습니다.
+
+background-position : 배경 이미지의 위치를 정하는 속성
+	x-position y-position : 가로 위치와 세로 위치를 정합니다.
+	가로 위치 값 : left, center, right, 백분율, 길이
+	세로 위치 값 : top, center, bottom, 백분율, 길이
+	initial : 기본값으로 설정합니다.
+
+<video oncontextmenu="return false;" id="myVideo" width="640" controls="controls" autoplay="autoplay">
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.webm" type="video/webm">
+</video>
+oncontextmenu='return false' : 우클릭방지
+onselectstart='return false' : 블럭선택방지
+ondragstart='return false' : 드래그방지
+controls : 오디오 재생에 관한 조절 장치를 보여줌
+autoplay : 자동재생
+loop : 반복재생 
+muted : 음소거
+
+<audio controls="controls" src="../Audio/bgm.mp3">bgm</audio>
+
+
+column-count : 3 컬럼 수를 지정합니다.
+column-gap : 칼럼(열)의 간격을 지정합니다. 속성값은 픽셀(pixel) 또는 %(percentage)로 지정할 수 있습니다.
+column-rule : 1px solid red; : 	컬럼 구분선의 스타일과 폭, 색상을 지정합니다.
+*/

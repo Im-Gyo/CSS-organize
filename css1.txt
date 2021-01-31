@@ -1,0 +1,60 @@
+/*@font-face 로컬의 폰트 설치 여부와 상관 없이 특정 서버에 위치한 폰트 다운로드하는 웹폰트 */
+@font-face {
+	/*font-family 사용할 폰트 패밀리명 지정(만약 로컬에는 돋움체가 있지만 다른 컴퓨터에는 해당 폰트가 없다면 대안 서체 지정필요)*/
+	font-family: '돋움체';
+	/*font-style 폰트의 기울기,이태릭체 설정*/
+	font-style:normal; 
+	/*font-weight 폰트의 굵기 설정*/
+	font-weight:normal; 
+	/*경로 설정(상대경로)*/
+	src: url('../Fonts/KoPubDotumMedium.ttf');
+}
+
+@font-face {
+	font-family: '바탕체'; 
+	font-style:normal; 
+	font-weight:normal; 
+	src: url('../Fonts/KoPubBatangMedium.ttf');
+}
+
+/*body태그의 폰트 사이즈 1em (em : 가변적 사이즈)*/
+body { 
+	font-family:'바탕체';
+	font-size:1em; 
+}
+
+h1,h2,h3,h4 {  font-family:'돋움체';	}
+/*h1태그의 스타일 지정*/
+h1 { 
+	font-size:5em;
+	/*줄 간격 설정(단위 미지정시 em 기본)*/
+	line-height: 3; 
+	color: #DF01A5;
+}
+
+/*h2태그의 스타일 지정*/
+h2 { 
+	font-size:1.4em;
+	line-height: 2; 
+	color: #298A08; 
+
+}
+/*h3태그의 스타일 지정*/
+h3 { font-size:1.2em; }
+
+/*h4태그의 스타일 지정*/
+h4 { font-size:1.1em; }
+
+/*p태그의 스타일 지정*/
+p { 
+	font-size:1em; 
+	line-height: 1.45;
+	color: #000000;
+}
+
+
+
+
+
+
+
